@@ -1,14 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Saswat Saubhagya</title>
   <base href="/">
-
+  <script type="text/javascript" src="/assets/js/jquery.js"></script>
+  <script type="text/javascript" src="/assets/js/interface.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
+
+<script type="text/javascript">
+
+  $(document).ready(
+    function () {
+      $('#dock2').Fisheye(
+        {
+          maxWidth: 60,
+          items: 'a',
+          itemsText: 'span',
+          container: '.dock-container2',
+          itemWidth: 40,
+          proximity: 80,
+          alignment: 'left',
+          valign: 'bottom',
+          halign: 'center'
+        }
+      )
+    }
+  );
+
+</script>
